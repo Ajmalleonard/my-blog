@@ -1,7 +1,11 @@
 import React from "react";
 
 function Footer() {
-  return <section className="2xl:max-container bg-dark-30"></section>;
+  return (
+    <footer className="max-container h-[500px] bg-default-100 p-5 rounded-2xl">
+      Footer
+    </footer>
+  );
 }
 
 export default Footer;

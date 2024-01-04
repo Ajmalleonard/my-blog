@@ -19,9 +19,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+}
 body {
   color: var(--text);
-  background: var(--bg);
+
   overflow-x: hidden;
 }
 
@@ -32,5 +37,13 @@ a {
 @layer utilities {
   .max-container {
     @apply max-w-[1440px] mx-auto;
+  }
+
+  .FlexCenter {
+    @apply flex justify-center items-center;
+  }
+
+  .FlexBetween {
+    @apply flex justify-between items-center;
   }
 }
