@@ -46,4 +46,16 @@ a {
   .FlexBetween {
     @apply flex justify-between items-center;
   }
+  .FlexStart {
+    @apply flex justify-start items-center;
+  }
+  .FlexSatrt-col {
+    @apply flex justify-start items-start flex-col;
+  }
+  .FlexEnd {
+    @apply flex justify-end items-center;
+  }
+  .subheading {
+    @apply pb-8  text-start text-redish-50;
+  }
 }

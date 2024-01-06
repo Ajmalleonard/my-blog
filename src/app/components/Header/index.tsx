@@ -18,11 +18,11 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "@nextui-org/react";
-import ModeSwitch from "../Switch/Switch";
-import Image from "next/image";
+
 import GitLogo from "./GitLogo";
 
 import ThemeSwitch from "../Switch/themSwitch";
+import Logo2 from "./logo2";
 
 function Header() {
   return (
@@ -85,7 +85,7 @@ function Header() {
 
       {/* desktop Navbar */}
       <NavbarBrand className="hidden sm:flex">
-        <Logo />
+        <Logo2 />
       </NavbarBrand>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
