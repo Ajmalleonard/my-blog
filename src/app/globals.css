@@ -58,4 +58,7 @@ a {
   .subheading {
     @apply pb-8  text-start text-redish-50;
   }
+  .heading {
+    @apply text-xl font-bold max-w-[450px] text-start text-dark-20 hover:text-white;
+  }
 }
