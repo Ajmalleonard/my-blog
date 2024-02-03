@@ -5,6 +5,7 @@ import Categories from "./components/Categories";
 import Featured from "./components/Featured";
 import Hero from "./components/Hero";
 import MainPage from "./components/MainPage";
+import Router from "next/router";
 
 export default function Home() {
   return (

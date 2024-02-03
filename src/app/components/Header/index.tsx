@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 
 import Logo from "./logo";
 
@@ -21,10 +20,10 @@ import {
 
 import GitLogo from "./GitLogo";
 
-import ThemeSwitch from "../Switch/themSwitch";
 import Logo2 from "./logo2";
 
 function Header() {
+
   return (
     <Navbar isBordered isBlurred={false} position="sticky">
       {/* mobile Navbar */}
@@ -42,7 +41,6 @@ function Header() {
       <NavbarContent className="sm:hidden" justify="end">
         <div className="FlexCenter gap-2">
           <GitLogo />
-          <ThemeSwitch />
         </div>
       </NavbarContent>
 
@@ -84,9 +82,12 @@ function Header() {
       </NavbarMenu>
 
       {/* desktop Navbar */}
-      <NavbarBrand className="hidden sm:flex">
-        <Logo2 />
-      </NavbarBrand>
+      <div className="flex gap-4">
+        <NavbarBrand className="hidden sm:flex">
+          <Logo2 />
+        </NavbarBrand>
+ 
+      </div>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
@@ -136,7 +137,6 @@ function Header() {
             Learn
           </Button>
           <GitLogo />
-          <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
     </Navbar>
